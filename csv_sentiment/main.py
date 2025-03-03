@@ -6,7 +6,6 @@ import transformers
 from tqdm import tqdm
 from scipy.special import softmax
 import numpy as np
-import click
 
 
 # Load Model and Tokenizer
@@ -72,7 +71,6 @@ def process_csv(input_csv, output_csv):
     df.to_csv(output_csv, index=False)
     print(f"Processed file saved as {output_csv}")
 
-@click.command()
 def main():
     parser = argparse.ArgumentParser(description="Sentiment Analysis CLI Tool using Twitter RoBERTa.")
     parser.add_argument("--csv", type=str, help="Path to input CSV file with a single column of text.")
