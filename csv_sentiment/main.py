@@ -14,7 +14,7 @@ transformers.logging.set_verbosity_error()
 MODEL_NAME = "cardiffnlp/twitter-roberta-base-sentiment-latest"
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 config = AutoConfig.from_pretrained(MODEL_NAME)
-model = AutoModelForSequenceClassification.from_pretrained(MODEL_NAME, local_files_only=True)
+model = AutoModelForSequenceClassification.from_pretrained(MODEL_NAME)
 # classifier = pipeline("sentiment-analysis", model=model, tokenizer=tokenizer, config=config)
 
 def process_sentiment(text):
