@@ -7,7 +7,7 @@ authors = ["Darshan Kothari <dkothari777@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.10"
 torch = "^2.6.0"
-transformers = "^4.49.0"
+transformers = "^4.50.0"
 pandas = "^2.2.3"
 tqdm = "^4.67.1"
 scipy = "^1.15.2"
